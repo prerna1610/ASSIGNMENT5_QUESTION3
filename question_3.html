@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <script src="ques3.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background: url(https://cdn.dribbble.com/users/1770290/screenshots/6183149/bg_79.gif) no-repeat center/cover;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        table {
+            width: 100%;
+            font-size: 2vw;
+            font-family: 'Pacifico', cursive;
+            padding-top: 20px;
+        }
+
+        .a {
+            text-align: right;
+
+        }
+
+        .a a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.6vw;
+        }
+
+        .a a:hover {
+            color: red;
+            background: rgb(230, 164, 224);
+        }
+
+        .head {
+            font-size: 2vw;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+        }
+        h1{
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            font-size: 2vw;
+            font-family: fantasy;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-family: cursive;
+            font-size: 3vw;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                Name: PRERNA PATWAL<br>
+                Roll Number: 2006215
+            </td>
+            <td class="a">
+                <a href="">GO TO 1ST QUESTION =>>></a><br>
+                <a href="">
+                    <<<= GO TO PREVIOUS QUESTION</a><br>
+                        <a href=""><b>SHOW CODE</b></a>
+            </td>
+        </tr>
+    </table>
+    <div class="head">
+        ASSIGNMENT 5
+    </div>
+    <div class="head">
+        Question 3: Explain thee difference between Undefined and not defined variables in JS using HTML page.
+    </div>
+    <h1>
+        Difference between undefined and not defined
+    </h1>
+    <h3>
+        Undefined:
+    </h3>
+    <p>
+        It works like when we declared a variable in the code but did not assign the value before printing the
+        variable value.
+    </p>
+    <p>
+        Example 1: The global execution context will be created and in the memory allocation phase, the var a will get
+        space in memory, and JavaScript will assign undefined to it. During the thread of execution, the JavaScript will
+        encounter the first line console.log(a) and as we haven’t assigned the value for a, undefined will be printed on
+        the console. In the next line, we have assigned 5 to a, hence the variable a is no more undefined. Now it
+        contains the value 5. So next time whenever we access the variable a, it won’t be evaluated as undefined. So it
+        will print the actual value of a.
+    </p>
+    <h3>
+        Not Defined
+    </h3>
+    <p>
+        It works like when we did not declare the variable and try to call that variable.
+    </p>
+    
+    <p>
+        Example 2: First of all, global execution context will be created and in the memory allocation phase, the
+        variable “a” will get space in memory, and by default, JavaScript assigns undefined to “a”. During the thread of
+        execution, the “console.log(a)” will be printed as undefined. In the next line, we have assigned 5 to variable
+        a. In the console, 5 will be printed. At the last line when JavaScript encounters the “console.log(b)” it
+        searches for “b” inside the memory heap of execution context but it is not available, the JS engine will throw
+        the “Reference Error” with a message of “b is not defined“. The JavaScript will stop execution when it
+        encounters a reference error.
+    </p>
+</body>
+
+</html>
